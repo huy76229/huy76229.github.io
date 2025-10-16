@@ -1,74 +1,185 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QUOC HUY TRAN — Robotics Software Developer</title>
-  <meta name="description" content="QUOC HUY TRAN — Robotics software developer specializing in autonomous navigation and AI integration.">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    .container {
-      max-width: 600px;
-      padding: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    h1 {
-      margin-bottom: 10px;
-      font-size: 28px;
-    }
-    p {
-      color: #555;
-      line-height: 1.6;
-    }
-    .tags {
-      margin-top: 15px;
-    }
-    .tag {
-      display: inline-block;
-      background: #e0e7ff;
-      color: #333;
-      padding: 6px 10px;
-      margin: 4px;
-      border-radius: 6px;
-      font-size: 13px;
-    }
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 16px;
-      background-color: #4f46e5;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quoc Huy Tran - Robotics Software Developer</title>
+    <style>
+        /* --- CSS for Dark Theme and Professional Style --- */
+        :root {
+            --bg-color: #121212; 
+            --text-color: #E0E0E0; 
+            --accent-color: #00ADB5; 
+            --card-bg: #1F1F1F; 
+            --heading-color: #FFFFFF;
+            --link-hover: #00FFFF;
+            --skill-hover: #00ADB5;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            padding: 40px 20px;
+        }
+
+        /* --- Header and Title --- */
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        header h1 {
+            color: var(--heading-color);
+            font-size: 3em;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header h2 {
+            color: var(--accent-color);
+            font-size: 1.5em;
+            font-weight: 400;
+            margin-top: 0;
+        }
+
+        header p {
+            font-size: 1.1em;
+            max-width: 600px;
+            margin: 15px auto;
+        }
+
+        /* --- Section Styling --- */
+        section {
+            background-color: var(--card-bg);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+        }
+
+        section h3 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        /* --- Skills Section (Badges/Grid) --- */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-badge {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 10px 18px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 0.95em;
+            border-left: 3px solid var(--accent-color);
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: default;
+        }
+
+        .skill-badge:hover {
+            background-color: var(--skill-hover);
+            color: #121212;
+            transform: translateY(-2px);
+        }
+
+        .skill-primary {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            border-left: none;
+        }
+
+        /* --- Links and Contact --- */
+        .contact-links {
+            text-align: center;
+        }
+
+        .contact-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 20px;
+            transition: color 0.3s ease, transform 0.3s ease;
+            font-size: 1.1em;
+        }
+
+        .contact-links a:hover {
+            color: var(--link-hover);
+            transform: translateY(-2px);
+        }
+
+        /* --- Paragraph Enhancements --- */
+        p strong {
+            color: var(--accent-color);
+        }
+
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>QUOC HUY TRAN</h1>
-    <p>Robotics Software Developer — focused on autonomous navigation and AI-based robotics solutions.</p>
-    <div class="tags">
-      <div class="tag">ROS / ROS2</div>
-      <div class="tag">SLAM & Navigation</div>
-      <div class="tag">C++ / Python</div>
-      <div class="tag">Computer Vision</div>
-      <div class="tag">AI Integration</div>
+
+    <div class="container">
+
+        <header>
+            <h1>QUOC HUY TRAN</h1>
+            <h2>Robotics Software Developer</h2>
+            <p>— focused on <strong>autonomous navigation</strong> and <strong>AI-based robotics solutions</strong>.</p>
+        </header>
+
+        <section>
+            <h3>Core Expertise & Technologies</h3>
+            <div class="skills-grid">
+                <div class="skill-badge skill-primary">ROS / ROS2</div>
+                <div class="skill-badge skill-primary">SLAM & Navigation</div>
+                <div class="skill-badge">C++ / Python</div>
+                <div class="skill-badge">Computer Vision</div>
+                <div class="skill-badge">AI Integration</div>
+                <div class="skill-badge">Mission Planning</div>
+                <div class="skill-badge">External/Legacy System Integration</div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Mission Statement</h3>
+            <p>
+                As a Robotics Software Developer, my goal is to translate cutting-edge research in **autonomous navigation** and **AI** into robust, deployable software for real-world robotic systems. I am dedicated to creating efficient, safe, and scalable solutions that push the boundaries of robotic autonomy.
+            </p>
+        </section>
+
+        <section class="contact-links">
+            <h3>Connect</h3>
+            <p>
+                <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_URL" target="_blank">&#x1F517; LinkedIn</a>
+                <a href="https://github.com/huy76229" target="_blank">&#x1F4BB; GitHub</a>
+            </p>
+        </section>
+
     </div>
-    <a class="btn" href="#">LinkedIn</a>
-  </div>
+
 </body>
 </html>
